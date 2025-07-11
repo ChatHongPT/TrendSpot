@@ -138,13 +138,74 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 ---
 
 ## 🛠️ Troubleshooting Table
-|  NO | 구분 | 이슈 내용 | 원인 | 해결 방법 |
-|-------:|:--------|:---------|:-----|:---------|
-| 1 | DB | 🔥 Oracle 파티셔닝 이슈 | Oracle 라이선스 및 실습 환경 제한 | MySQL 전환 → Range/Hash 단일 파티셔닝 |
-| 2 | DB | 🔥 Oracle 파티셔닝 외래키 | 파티셔닝 테이블은 외래키 미지원 | 단일 테이블로 작업 |
-| 3 | DB | 🔥 대용량 데이터 insert | 100 만 건 insert 시 OS 용량 부족·속도 문제 | `LOAD DATA INFILE` (≈10 분) |
-| 4 | 협업 | 💾 Colab 파일 공유 | Colab 개별 업로드는<br>업로더만 접근 가능 | 공유 폴더 생성 → Colab 마운트 |
-| 5 | 협업 | 💾 Drive CSV 업로드 | Google Docs로 자동 변환 | Drive 설정 → “업로드 파일 변환” 해제 |
-| 6 | 협업 | 💾 Drive 업로드 속도 | 대용량 파일 업로드 느림 | 공유 폴더 + Colab 마운트 |
-| 7 | 데이터 | 🔄 데이터 범위 조정 | 경기도 전체 데이터 사용 시 과부하 | 경기 서부(부천·안양·광명·시흥)로 축소 |
-| 8 | 데이터 | 🔄 데이터 타입 변환 | `sales_amount` decimal(12,2) | `ALTER TABLE` → `INT` |
+<div style="overflow-x:auto;">
+  <table style="width:100%; border-collapse: collapse; min-width: 700px;">
+    <thead>
+      <tr>
+        <th style="text-align:right; border: 1px solid #ddd; padding: 8px;">NO</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">카테고리</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">이슈 내용</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">원인</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">해결 방법</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:right; border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">1</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">DB</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">🔥 Oracle 파티셔닝 이슈</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">Oracle 라이선스 및 실습 환경 제한</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">MySQL 전환 → Range/Hash 단일 파티셔닝</td>
+      </tr>
+      <tr>
+        <td style="text-align:right; border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">2</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">DB</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">🔥 Oracle 파티셔닝 외래키</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">파티셔닝 테이블은 외래키 미지원</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">단일 테이블로 작업</td>
+      </tr>
+      <tr>
+        <td style="text-align:right; border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">3</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">DB</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">🔥 대용량 데이터 insert</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">100 만 건 insert 시 OS 용량 부족·속도 문제</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;"><code>LOAD DATA INFILE</code> (≈10 분)</td>
+      </tr>
+      <tr>
+        <td style="text-align:right; border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">4</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">협업</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">💾 Colab 파일 공유</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">Colab 개별 업로드는<br>업로더만 접근 가능</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">공유 폴더 생성 → Colab 마운트</td>
+      </tr>
+      <tr>
+        <td style="text-align:right; border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">5</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">협업</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">💾 Drive CSV 업로드</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">Google Docs로 자동 변환</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">Drive 설정 → “업로드 파일 변환” 해제</td>
+      </tr>
+      <tr>
+        <td style="text-align:right; border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">6</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">협업</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">💾 Drive 업로드 속도</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">대용량 파일 업로드 느림</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">공유 폴더 + Colab 마운트</td>
+      </tr>
+      <tr>
+        <td style="text-align:right; border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">7</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">데이터</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">🔄 데이터 범위 조정</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">경기도 전체 데이터 사용 시 과부하</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">경기 서부(부천·안양·광명·시흥)로 축소</td>
+      </tr>
+      <tr>
+        <td style="text-align:right; border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">8</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">데이터</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;">🔄 데이터 타입 변환</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;"><code>sales_amount</code> decimal(12,2)</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; word-break: break-word;"><code>ALTER TABLE</code> → <code>INT</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
