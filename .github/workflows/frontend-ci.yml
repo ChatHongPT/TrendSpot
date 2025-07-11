@@ -16,7 +16,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: TrendSpot/frontend
+        working-directory: frontend
 
     steps:
       - name: Checkout repository
