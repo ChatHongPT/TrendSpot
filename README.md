@@ -31,7 +31,6 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 
 </div>
 
----
 
 ## ⚒️ Tech Stack
 
@@ -39,6 +38,14 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-rounded&logo=pandas&logoColor=white)
 ![MySQL](https://img.shields.io/badge/-MySQL-05122A?style=flat&logo=mysql)&nbsp;
 ![DBeaver](https://img.shields.io/badge/DBeaver-28a745?style=flat-rounded&logo=dbeaver&logoColor=white)
+
+---
+
+## ⛓️ Dataset
+행정안전부에서 제공하는 [경기도 지역 카드 소비 데이터셋](https://www.data.go.kr/data/15128475/fileData.do?recommendDataYn=Y#) 중, 2024년 1월부터 12월까지의 데이터를 기반으로 구성되었습니다.
+이 데이터는 민간 카드사의 소비 데이터를 바탕으로, 시군구 및 행정동 단위에서 업종별 소비 패턴을 분석할 수 있도록 설계되어 있습니다.
+
+이를 통해 지역별·기간별·업종별 소비 밀집도와 성향을 구체적으로 분석하고, 소상공인이 데이터 기반의 창업 전략을 기획할 수 있는 근거 자료로 활용할 수 있습니다.
 
 ---
 
@@ -52,15 +59,6 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 - **📦 Containerization**: VirtualBox + Ubuntu 환경에서 일관된 개발 환경 구축
 - **🔬 Data Analysis**: Google Colab을 활용한 데이터 전처리리 
 - **💾 Database Management**: MySQL + DBeaver를 통한 효율적인 데이터 관리
-
----
-
-## ⚒️ Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-rounded&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-rounded&logo=pandas&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-05122A?style=flat&logo=mysql)&nbsp;
-![DBeaver](https://img.shields.io/badge/DBeaver-28a745?style=flat-rounded&logo=dbeaver&logoColor=white)
 
 ---
 
@@ -85,21 +83,29 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 2. **💾 Data Storage**: MySQL 데이터베이스에 분석 결과 저장
 3. **📊 Visualization**: 사용자 친화적인 대시보드로 인사이트 제공
 
----
+
 ### 🔄 Data Processing
 
-#### ✅ 날짜는 Oracle SQL 표준에 맞게 변환
-- 기존 형태: `%Y%m%d` (예: 20241001)
-- 변경 형태: `%Y-%m-%d`
+<details>
+<summary><h4>✅ 날짜는 Oracle SQL 표준에 맞게 변환</h4></summary>
+
+- 기존 형태: `%Y%m%d` (예: 20241001)  
+- 변경 형태: `%Y-%m-%d`  
 - 이유: Oracle DATE 타입 및 SQL 표준에 맞춤
 
-#### ✅ 연령대는 가독성과 분석 용이성을 위해 두 자릿수로 변경
+</details>
+
+<details>
+<summary><h4>✅ 연령대는 가독성과 분석 용이성을 위해 두 자릿수로 변경</h4></summary>
 
 - 기존: 1, 2, 3... (앞자리만 존재)
 - 변경: 10, 20, 30... (뒤에 0을 붙여서 연령대 완성)
 - 예: 2 → 20, 3 → 30
 
-#### ✅ 시군구코드 → 지역명으로 매핑
+</details>
+
+<details>
+<summary><h4>✅ 시군구코드 → 지역명으로 매핑</h4></summary>
 
 | 지역  | 컬럼명    | 시군구코드 |
 |-------|----------|-----------|
@@ -108,7 +114,12 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 | 광명시 | city_name | 41210    |
 | 시흥시 | city_name | 41390    |
 
-#### ✅ 컬럼명은 가독성을 높여 이해하기 쉽게 변경
+</details>
+
+
+<details>
+<summary><h4>✅ 컬럼명은 가독성을 높여 이해하기 쉽게 변경</h4></summary>
+
 | 기존 컬럼명     | 새로운 컬럼명    | 주석 (한글 설명)   | 예시 데이터    |
 |----------------|---------------|----------------|--------------|
 | -         | id            | 고유번호       | 1           |
@@ -119,9 +130,15 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 | sex            | gender        | 성별          | F or M    |
 | age            | age_group     | 연령별        | 20         |
 
-#### ✅ 특정 업종은 분석에서 제외
+</details>
 
-- 업종 제외 리스트: `의료/건강`, `공공/기업/단체`
+<details>
+<summary><h4>✅ 특정 업종은 분석에서 제외</h4></summary>
+
+  - 업종 제외 리스트: `의료/건강`, `공공/기업/단체`
+
+</details>
+
 
 ---
 
@@ -129,13 +146,45 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 
 ### 1. 월별 RANGE PARTITION vs 월별 HASH PARTITION
 👉 월 기준 범위조회와 해시 파티션의 성능 차이
+| 항목        | 월별 RANGE PARTITION | 월별 HASH PARTITION | Non-Partitioned Table |
+| :-------- | :----------------: | :---------------: | :-------------------: |
+| 3월 단일월 매출 |       3.705s       |        42s        |          36s          |
+| 2\~4월 매출  |         13s        |        41s        |          36s          |
+| 월별 매출 트렌드 |       1m 59s       |       2m 28s      |         2m 5s         |
+| 3월 업종별 매출 |         32s        |       1m 19s      |         1m 4s         |
 
 
 ### 2.  월별 RANGE PARTITION vs 분기 RANGE PARTITION 
 👉 범위 조회에서 분기 기준과 월 기준 파티션의 효율성
+| 항목        | 월별 RANGE PARTITION | 분기별 RANGE PARTITION | Non-Partitioned Table |
+| :-------- | :----------------: | :-----------------: | :-------------------: |
+| 1분기 총 매출  |       7.936s       |        7.264s       |          38s          |
+| 1월 단일월 매출 |       2.228s       |        7.400s       |          35s          |
+| 월별 매출 트렌드 |       1m 26s       |        1m 24s       |         2m 2s         |
+| 1분기 학원 매출 |       5.679s       |        7.149s       |          29s          |
 
 
----
+
+### ✅ 결론
+
+- `HASH 파티션`은 모든 상황에서 빠르지 않고, 잘못 쓰면 일반 테이블보다 **오히려 느릴 수 있음**.
+- `RANGE 파티션`은 시간 기반 분석에는 훨씬 효율적이며, MySQL이 파티션 프루닝도 잘 함
+
+<details>
+  <summary>✅ 언제 <code>HASH</code> 파티셔닝이 유리할까?</summary>
+
+  <br>
+
+  | 상황 | 예시 |
+  |------|------|
+  | 🎯 **동일한 분포로 데이터를 나눌 때** | 예: `user_id % N`으로 균등 분산 |
+  | 🎯 **정확한 파티션 키로 조회할 때** | 예: `WHERE month_no = 3` (정확히 해시 대상 컬럼 필터링) |
+  | 🎯 **데이터 양이 많고 병렬 처리 필요할 때** | 파티션별 병렬 쿼리 최적화 가능 |
+
+</details>
+
+---  
+
 
 ## 🛠️ Troubleshooting Table
 |  NO | 카테 <br> 고리  | 이슈 내용 | 원인 | 해결 방법 |
