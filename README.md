@@ -13,7 +13,7 @@
   <img width="1920" height="1080" alt="Persona_image" src="https://github.com/user-attachments/assets/28ae8aa6-ab33-46b7-97b0-680146afc638" />
 </div>
 
-**TrendSpo**t은 소상공인들이 성공적인 창업을 준비할 수 있도록, **TrendCore 팀이 직접 데이터를 탐구하고 분석하여 기획한 데이터 기반 인사이트 플랫폼**입니다.
+**TrendSpot**은 소상공인들이 성공적인 창업을 준비할 수 있도록, **TrendCore 팀이 직접 데이터를 탐구하고 분석하여 기획한 데이터 기반 인사이트 플랫폼**입니다.
 
 지역별, 업종별, 기간별 소비 패턴을 심층적으로 분석함으로써, 소상공인들이 막연한 추측이 아닌 데이터에 기반한 전략적인 창업을 할 수 있도록 돕습니다.
 우리 팀은 2024년 경기 서부(부천시, 안양시, 광명시, 시흥시)의 수많은 카드사 소비 데이터를 전처리하여, 누구나 쉽게 이해하고 활용할 수 있는 창업 인사이트를 제공합니다.
@@ -50,7 +50,7 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 
 ### 아키텍처 구성요소
 - **📦 Containerization**: VirtualBox + Ubuntu 환경에서 일관된 개발 환경 구축
-- **🔬 Data Analysis**: Google Colab을 활용한 데이터 분석 
+- **🔬 Data Analysis**: Google Colab을 활용한 데이터 전처리리 
 - **💾 Database Management**: MySQL + DBeaver를 통한 효율적인 데이터 관리
 
 ---
@@ -138,8 +138,8 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 ---
 
 ## 🛠️ Troubleshooting Table
-| 번호 | 카테고리 | 이슈 내용 | 원인 | 해결 방법 |
-|-----:|:--------|:---------|:-----|:---------|
+|  NO | 구분 | 이슈 내용 | 원인 | 해결 방법 |
+|-------:|:--------|:---------|:-----|:---------|
 | 1 | DB | 🔥 Oracle 파티셔닝 이슈 | Oracle 라이선스 및 실습 환경 제한 | MySQL 전환 → Range/Hash 단일 파티셔닝 |
 | 2 | DB | 🔥 Oracle 파티셔닝 외래키 | 파티셔닝 테이블은 외래키 미지원 | 단일 테이블로 작업 |
 | 3 | DB | 🔥 대용량 데이터 insert | 100 만 건 insert 시 OS 용량 부족·속도 문제 | `LOAD DATA INFILE` (≈10 분) |
