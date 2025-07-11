@@ -36,7 +36,7 @@
 ## 🏗️ System Architecture
 
 <div align="center">
-  <img width="800" alt="TrendSpot Architecture" src="https://github.com/user-attachments/assets/67e83a91-45a5-4822-a4d4-7226b681303e" />
+  <img width="800" alt="TrendSpot Architecture" src="https://github.com/user-attachments/assets/9cbc83ad-7c23-44c4-ad65-e909e5911f07" />
 </div>
 
 ### 아키텍처 구성요소
