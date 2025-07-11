@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>데이터 대시보드</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📊 데이터 대시보드</h1>
+      <p>실시간 데이터 분석 및 시각화</p>
+    </div>
+
+    <div class="category-bar">
+      <div class="categories">
+        <button class="category-btn active" data-category="1">매출</button>
+        <button class="category-btn" data-category="2">고객</button>
+        <button class="category-btn" data-category="3">재고</button>
+        <button class="category-btn" data-category="4">마케팅</button>
+        <button class="category-btn" data-category="5">운영</button>
+        <button class="category-btn" data-category="6">분석</button>
+      </div>
+      <div class="client-info">
+        <div class="client-face">김</div>
+        <div class="client-details">
+          <div class="client-name">김데이터</div>
+          <div class="client-role">데이터 분석가</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="query-block">
+      <div class="query-title">🔍 현재 실행 중인 쿼리</div>
+      <div class="query-text" id="currentQuery">
+        SELECT * FROM sales_data WHERE category = '매출' AND date >= '2024-01-01';
+      </div>
+      <div class="query-status">
+        <span class="status-indicator"></span>
+        <span id="queryStatus">실행 완료</span>
+      </div>
+    </div>
+
+    <div class="dashboard">
+      <div class="chart-grid">
+        <div class="chart-container">
+          <h3>📈 월별 매출 추이</h3>
+          <canvas id="salesChart"></canvas>
+        </div>
+        
+        <div class="chart-container">
+          <h3>🎯 카테고리별 성과</h3>
+          <canvas id="categoryChart"></canvas>
+        </div>
+        
+        <div class="chart-container">
+          <h3>👥 고객 분포</h3>
+          <canvas id="customerChart"></canvas>
+        </div>
+        
+        <div class="chart-container">
+          <h3>📊 실시간 지표</h3>
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-value" id="totalSales">₩25,400,000</div>
+              <div class="metric-label">총 매출</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value" id="totalCustomers">1,234</div>
+              <div class="metric-label">총 고객수</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value" id="avgOrder">₩206,000</div>
+              <div class="metric-label">평균 주문액</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value" id="growth">+18.5%</div>
+              <div class="metric-label">성장률</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-table">
+      <h3>📋 최근 데이터</h3>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>날짜</th>
+            <th>카테고리</th>
+            <th>매출</th>
+            <th>고객수</th>
+            <th>상태</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 데이터는 JavaScript로 동적 생성 -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
