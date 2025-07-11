@@ -2,9 +2,8 @@
 > **소상공인을 위한 스마트 창업 인사이트 플랫폼**
 
 <div align="center">
-  <img width="982" height="412" alt="TrendSpot Main Image" src="https://github.com/user-attachments/assets/2646e85b-5bd4-44da-b687-64a6af7e7f47" />
+  <img width="982" height="412" alt="TrendSpot Main Image" src="https://github.com/user-attachments/assets/b8291e22-79ab-47e0-a7a9-d029af510b4c" />
 </div>
-
 ---
 
 ## 🌟 프로젝트 개요
