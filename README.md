@@ -55,7 +55,7 @@
 
 ---
 
-## 💾 Database Design
+## 💾 ERD
 <div align="center">
   <img width="660" height="417" alt="ERD" src="https://github.com/user-attachments/assets/6fc23a05-1cbc-4c38-b880-a66d2ee51931" />
 </div>
