@@ -1,6 +1,6 @@
 # 📊 TrendSpot
 > **소상공인을 위한 스마트 창업 인사이트 플랫폼**
-
+> 
 <div align="center">
   <img width="982" height="412" alt="TrendSpot Main Image" src="https://github.com/user-attachments/assets/b8291e22-79ab-47e0-a7a9-d029af510b4c" />
 </div>
@@ -225,6 +225,13 @@
 <div align="center">
     <img width="800" alt="Dashboard Page" src="https://github.com/user-attachments/assets/af9a57a9-3ed8-4429-b6a2-8ea5d717e2b3" />
 </div>
+
+---
+
+## 🔗 배포 주소
+👉 https://chathongpt.github.io/TrendSpot
+
+>PC 크롬 환경 기준에 최적화된 대시보드를 확인해보세요!
 
 ---
 
