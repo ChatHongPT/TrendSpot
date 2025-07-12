@@ -72,7 +72,7 @@
 ## 🏗️ System Architecture
 
 <div align="center">
-  <img width="800" alt="TrendSpot Architecture" src="https://github.com/user-attachments/assets/9cbc83ad-7c23-44c4-ad65-e909e5911f07" />
+  <img width="800" alt="TrendSpot Architecture" src="https://github.com/user-attachments/assets/0a57d009-5e9d-4f9d-a749-e7b520132fec" />
 </div>
 
 ### 아키텍처 구성요소
@@ -220,8 +220,13 @@
   <img width="800" alt="Dashboard Page" src="https://github.com/user-attachments/assets/350e4d7c-a897-4ea5-a619-85d01dd3bf2b" />
 </div>
 
----
+### 🎬 실행 화면
 
+<div align="center">
+    <img width="800" alt="Dashboard Page" src="https://github.com/user-attachments/assets/af9a57a9-3ed8-4429-b6a2-8ea5d717e2b3" />
+</div>
+
+---
 
 ## 🛠️ Troubleshooting Table
 |  NO | 카테 <br> 고리  | 이슈 내용 | 원인 | 해결 방법 |
