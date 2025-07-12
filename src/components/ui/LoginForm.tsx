@@ -26,7 +26,7 @@ export default function LoginForm({ onLogin }: LoginFormProps) {
         className="bg-white rounded-2xl shadow-2xl p-10 w-full max-w-sm flex flex-col gap-6 border border-blue-100 transition-all duration-300 hover:shadow-blue-200"
       >
         <div className="flex flex-col items-center mb-2">
-          <img src="/logo.png" alt="TrendSpot 로고" className="w-16 h-16 mb-2 rounded-full shadow" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="TrendSpot 로고" className="w-16 h-16 mb-2 rounded-full shadow" />
           <div className="text-2xl font-extrabold text-blue-700 tracking-tight select-none">TrendSpot</div>
           <div className="text-sm text-gray-700 font-medium mt-1">소상공인 창업 인사이트 플랫폼</div>
         </div>

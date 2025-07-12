@@ -11,11 +11,11 @@ export default function Layout({ children, onLogout }: LayoutProps) {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 flex flex-col">
       <header className="fixed top-0 left-0 w-full z-50 bg-white shadow p-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <img src="/logo.png" alt="TrendSpot 로고" className="w-8 h-8 rounded-full shadow" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="TrendSpot 로고" className="w-8 h-8 rounded-full shadow" />
           <span className="text-2xl font-bold text-blue-600">TrendSpot</span>
         </div>
         <div className="flex items-center space-x-2 ml-4 relative">
-          <img src="/avatar.png" alt="profile" className="w-8 h-8 rounded-full border" />
+          <img src={`${import.meta.env.BASE_URL}avatar.png`} alt="profile" className="w-8 h-8 rounded-full border" />
           <span className="text-gray-700 font-semibold">김우리님 안녕하세요</span>
           <button
             className="ml-2 p-2 rounded hover:bg-gray-100 focus:outline-none"
@@ -42,7 +42,7 @@ export default function Layout({ children, onLogout }: LayoutProps) {
         </div>
       </main>
       <div className="fixed bottom-4 right-4 flex items-center bg-white/80 rounded-full shadow-lg px-3 py-1 z-50 border border-blue-100 backdrop-blur-sm">
-        <img src="/woori.png" alt="TrendCore 로고" className="w-6 h-6 mr-2" />
+        <img src={`${import.meta.env.BASE_URL}woori.png`} alt="TrendCore 로고" className="w-6 h-6 mr-2" />
         <span className="text-gray-500 font-semibold text-xs tracking-wide">TrendCore</span>
       </div>
     </div>

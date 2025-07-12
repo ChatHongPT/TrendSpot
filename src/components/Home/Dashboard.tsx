@@ -5,10 +5,10 @@ import QueryCard from '../ui/QueryCard';
 import ChartCard from '../ui/ChartCard';
 
 const files = [
-  { sql: '/sql/q1.sql', csv: '/data/q1.csv', label: 'Q1' },
-  { sql: '/sql/q2.sql', csv: '/data/q2.csv', label: 'Q2' },
-  { sql: '/sql/q3.sql', csv: '/data/q3.csv', label: 'Q3' },
-  { sql: '/sql/q4.sql', csv: '/data/q4.csv', label: 'Q4' },
+  { sql: `${import.meta.env.BASE_URL}sql/q1.sql`, csv: `${import.meta.env.BASE_URL}data/q1.csv`, label: 'Q1' },
+  { sql: `${import.meta.env.BASE_URL}sql/q2.sql`, csv: `${import.meta.env.BASE_URL}data/q2.csv`, label: 'Q2' },
+  { sql: `${import.meta.env.BASE_URL}sql/q3.sql`, csv: `${import.meta.env.BASE_URL}data/q3.csv`, label: 'Q3' },
+  { sql: `${import.meta.env.BASE_URL}sql/q4.sql`, csv: `${import.meta.env.BASE_URL}data/q4.csv`, label: 'Q4' },
 ];
 
 const questions = [
