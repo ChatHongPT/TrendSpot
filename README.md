@@ -58,7 +58,7 @@
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-rounded&logo=pandas&logoColor=white)
 ![MySQL](https://img.shields.io/badge/-MySQL-05122A?style=flat&logo=mysql)&nbsp;
 ![DBeaver](https://img.shields.io/badge/DBeaver-28a745?style=flat-rounded&logo=dbeaver&logoColor=white)
-
+![React](https://img.shields.io/badge/React-20232A?style=flat-rounded&logo=react&logoColor=61DAFB)
 ---
 
 ## ⛓️ Dataset
