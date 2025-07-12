@@ -10,15 +10,35 @@
 ## 🌟 프로젝트 개요
 
 <div align="center">
-  <img width="1920" height="1080" alt="Persona_image" src="https://github.com/user-attachments/assets/28ae8aa6-ab33-46b7-97b0-680146afc638" />
+  <img src="https://github.com/user-attachments/assets/28ae8aa6-ab33-46b7-97b0-680146afc638" alt="Persona_image" width="80%" />
 </div>
 
-**TrendSpot**은 소상공인들이 성공적인 창업을 준비할 수 있도록, **TrendCore 팀이 직접 데이터를 탐구하고 분석하여 기획한 데이터 기반 인사이트 플랫폼**입니다.
+<br/>
 
-지역별, 업종별, 기간별 소비 패턴을 심층적으로 분석함으로써, 소상공인들이 막연한 추측이 아닌 데이터에 기반한 전략적인 창업을 할 수 있도록 돕습니다.
-우리 팀은 2024년 경기 서부(부천시, 안양시, 광명시, 시흥시)의 수많은 카드사 소비 데이터를 전처리하여, 누구나 쉽게 이해하고 활용할 수 있는 창업 인사이트를 제공합니다.
-TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 설계하고, 더 높은 창업 성공으로 도전할 수 있습니다.
+> **TrendSpot**은 소상공인의 성공적인 창업을 위해, **TrendCore 팀**이 직접 데이터를 수집하고 분석하여 만든 **데이터 기반 창업 인사이트 플랫폼**입니다.
 
+---
+
+## 🧭 왜 TrendSpot인가요?
+
+✅ **막연한 직감은 이제 그만 ❌**  
+데이터가 말하는 소비 흐름을 바탕으로, 정확한 창업 전략을 설계하세요!
+
+✅ **누구나 이해할 수 있는 시각화된 인사이트**  
+복잡한 수치를 차트와 그래프로 직관적으로 제공합니다!
+
+✅ **지역·업종·기간별 맞춤형 분석**  
+2024년 기준 **경기 서부 지역 (부천·안양·광명·시흥)**의 카드 소비 데이터를 활용해 **정확한 시장 파악과 타겟팅**이 가능합니다!
+
+---
+
+## 🌱 이런 분들에게 추천드려요!
+
+- 🏪 처음 창업을 준비하는 예비 사장님  
+- 🔁 업종 전환을 고민하는 소상공인  
+- 📊 상권과 트렌드 분석이 필요한 마케터
+
+---
 
 ## 👥 TrendCore 팀
 
@@ -184,6 +204,23 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 </details>
 
 ---  
+## 🖥️ 화면 소개
+
+### 🔐 로그인 화면
+
+<div align="center">
+  <img width="800" alt="Login Page" src="https://github.com/user-attachments/assets/eb8fe430-a568-40a4-b666-9402ff0eb391" />
+</div>
+
+---
+
+### 📊 대시보드 화면
+
+<div align="center">
+  <img width="800" alt="Dashboard Page" src="https://github.com/user-attachments/assets/350e4d7c-a897-4ea5-a619-85d01dd3bf2b" />
+</div>
+
+---
 
 
 ## 🛠️ Troubleshooting Table
