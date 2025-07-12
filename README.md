@@ -57,7 +57,7 @@ TrendSpot을 통해 소상공인들은 자신만의 맞춤형 창업 전략을 �
 
 ### 아키텍처 구성요소
 - **📦 Containerization**: VirtualBox + Ubuntu 환경에서 일관된 개발 환경 구축
-- **🔬 Data Analysis**: Google Colab을 활용한 데이터 전처리리 
+- **🔬 Data Analysis**: Google Colab을 활용한 데이터 전처리
 - **💾 Database Management**: MySQL + DBeaver를 통한 효율적인 데이터 관리
 
 ---
