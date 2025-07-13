@@ -69,16 +69,36 @@
 
 ---
 
+
 ## 🏗️ System Architecture
 
 <div align="center">
-  <img width="800" alt="TrendSpot Architecture" src="https://github.com/user-attachments/assets/0a57d009-5e9d-4f9d-a749-e7b520132fec" />
+  <img width="800" alt="TrendSpot Architecture" src="https://github.com/user-attachments/assets/866e89fd-421f-4a25-9d3a-65a76067d55c" />
 </div>
 
-### 아키텍처 구성요소
-- **📦 Containerization**: VirtualBox + Ubuntu 환경에서 일관된 개발 환경 구축
-- **🔬 Data Analysis**: Google Colab을 활용한 데이터 전처리
-- **💾 Database Management**: MySQL + DBeaver를 통한 효율적인 데이터 관리
+
+## 🔹 구성요소 설명
+
+### 🧑‍💻 사용자 인터페이스 (Frontend)
+- **React.js** 기반 SPA (Single Page Application)
+- **Chrome 브라우저**를 통해 사용자와 상호작용
+- 시각화는 **Recharts** 라이브러리를 사용하여 직접 구현
+
+### 📦 개발 환경 (Containerization)
+- **VirtualBox** 내의 **Ubuntu**에서 일관된 개발 환경 구성
+- 분석용 Python, Jupyter, MySQL 클라이언트 등 구동
+
+### 🔬 데이터 전처리 (Preprocessing)
+- 데이터 수집 및 정제는 **Google Colab**에서 수행
+- Colab에서 전처리된 데이터는 **CSV 형식**으로 저장되어 DB에 Import됨
+
+### 💾 데이터베이스 및 관리
+- **MySQL**을 통해 정제된 데이터 저장
+- **DBeaver**를 통해 파티셔닝 수행
+
+### 🔁 CI/CD 파이프라인
+- **GitHub Actions** 기반 자동화 빌드 및 배포
+- 소스 코드 푸시 시 → 빌드 & 배포 자동 실행
 
 ---
 
