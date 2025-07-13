@@ -152,15 +152,7 @@
     → 데이터가 고르게 분포되어 **동시 처리 성능**과 **로드 밸런싱**에 효과적.
 ---
 
-
-## 📈 Data Flow
-
-1. **🔄 Data Processing**: Pandas를 활용한 데이터 전처리 및 정제
-2. **💾 Data Storage**: MySQL 데이터베이스에 분석 결과 저장
-3. **📊 Visualization**: 사용자 친화적인 대시보드로 인사이트 제공
-
-
-### 🔄 Data Processing
+## 🔄 Data Processing
 
 <details>
 <summary><h4>✅ 날짜는 SQL 표준에 맞게 변환</h4></summary>
