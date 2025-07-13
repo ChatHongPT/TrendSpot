@@ -54,11 +54,26 @@
 
 ## ⚒️ Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-rounded&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-rounded&logo=pandas&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-05122A?style=flat&logo=mysql)&nbsp;
-![DBeaver](https://img.shields.io/badge/DBeaver-28a745?style=flat-rounded&logo=dbeaver&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-rounded&logo=react&logoColor=61DAFB)
+### 🧑‍💻 Frontend
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Recharts](https://img.shields.io/badge/Recharts-FF6384?style=flat&logo=chart.js&logoColor=white)
+
+### 📦 Container & OS
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=flat&logo=virtualbox&logoColor=white)
+
+### 🔬 Data Preprocessing
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=google-colab&logoColor=white)
+
+### 💾 Database
+![MySQL](https://img.shields.io/badge/MySQL-05122A?style=flat&logo=mysql&logoColor=white)
+![DBeaver](https://img.shields.io/badge/DBeaver-28a745?style=flat&logo=dbeaver&logoColor=white)
+
+### 🔁 Deployment & CI/CD
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
+
 ---
 
 ## ⛓️ Dataset
