@@ -96,12 +96,10 @@
 
 ### 🧑‍💻 사용자 인터페이스 (Frontend)
 - **React.js** 기반 SPA (Single Page Application)
-- **Chrome 브라우저**를 통해 사용자와 상호작용
 - 시각화는 **Recharts** 라이브러리를 사용하여 직접 구현
 
 ### 📦 개발 환경 (Containerization)
 - **VirtualBox** 내의 **Ubuntu**에서 일관된 개발 환경 구성
-- 분석용 Python, Jupyter, MySQL 클라이언트 등 구동
 
 ### 🔬 데이터 전처리 (Preprocessing)
 - 데이터 수집 및 정제는 **Google Colab**에서 수행
@@ -135,7 +133,7 @@
 
 ### **단일 파티셔닝 테이블 (기간 기준)**
 
-1. **분기별 RANGE 파티셔닝 (1~3/4~6/7~9/10~12)**
+1. **분기별 RANGE 파티셔닝 (1월-3월/4월-6월/7월-9월/10월-12월)**
     
     → 거래 월을 기준으로 1년을 **4개의 분기 구간**으로 나누어 파티셔닝.
     
@@ -165,11 +163,11 @@
 ### 🔄 Data Processing
 
 <details>
-<summary><h4>✅ 날짜는 Oracle SQL 표준에 맞게 변환</h4></summary>
+<summary><h4>✅ 날짜는 SQL 표준에 맞게 변환</h4></summary>
 
 - 기존 형태: `%Y%m%d` (예: 20241001)  
 - 변경 형태: `%Y-%m-%d`  
-- 이유: Oracle DATE 타입 및 SQL 표준에 맞춤
+- 이유: DATE 타입 및 SQL 표준에 맞춤
 
 </details>
 
@@ -290,6 +288,12 @@
 👉 https://chathongpt.github.io/TrendSpot
 
 >PC 크롬 환경 기준에 최적화된 대시보드를 확인해보세요!
+
+<details>
+  <summary><h4>🔐 테스트 계정</h4></summary>
+  ID : fisa<br>
+  PW : fisa
+</details>
 
 ---
 
