@@ -88,9 +88,8 @@
 ## 🏗️ System Architecture
 
 <div align="center">
-  <img width="800" alt="TrendSpot Architecture" src="https://github.com/user-attachments/assets/866e89fd-421f-4a25-9d3a-65a76067d55c" />
+  <img width="800" alt="TrendSpot Architecture" src="https://github.com/user-attachments/assets/8ae10c54-e8c9-4b57-a629-3c64d33424bb" />
 </div>
-
 
 ## 🔹 구성요소 설명
 
